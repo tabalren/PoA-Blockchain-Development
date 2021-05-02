@@ -1,6 +1,6 @@
 # How To: Create A Private Blockchain Network 
 
-![](welcome.png)
+![](Screenshots/welcome.png)
 
 This step-by-step guide can be used to create a Proof of Authority (PoA) algorithm which is typically used for private blockchain networks. A PoA requires pre-approval of, or voting in of, the account addresses that can approve transactions (seal blocks).
 
@@ -11,19 +11,19 @@ This step-by-step guide can be used to create a Proof of Authority (PoA) algorit
 
 Open your browser and navigate to the downloads page at https://download.mycrypto.com/
 
-![](my_crypto_download.png)
+![](Screenshots/my_crypto_download.png)
 
 Choose the appropriate installer for your operating system and once you download the installer, open the file, and follow the installation wizard.
 
-When you've successfully downloaded MyCrypto, you will a tutorial which you can read through. 
+When you've successfully downloaded MyCrypto, you will see an easy tutorial which you can read through. 
 
-![](mycrypto2.gif)
+![](Screenshots/mycrypto2.gif)
 
 Important note for Mac users:
 
 The first time you open MyCrypto, you will see a warning message. You can safely click on the "Open" button to start the application.
 
-(insert mac warning image)
+![](Screenshots/mycrypto_mac_wanrning.png)
 
 ## Allowing Permission to Open Apps from Unidentified Developers
 
@@ -35,11 +35,11 @@ Open the MyCrypto app, it should produce a warning error saying that you cannot 
 
 Look to the top-left of the screen and click on the Apple Logo and navigate to System Preferences > Security & Privacy.
 
-(insert system preferences image)
+![](Screenshots/mycrypto_system_preferences.png)
 
 Click in the General tab and allow your MyCrypto application security access to be opened in the "Allow Apps Downloaded From" section. Your screen should look similar to the image below.
 
-(insert security privacy image)
+![](Screenshots/security_privacy.png)
 
 ### 2. GoEthereum App 
 #### Go Ethereum is one of the three original implementations of the Ethereum protocol. It is written in Go, fully open-source and licensed under the GNU LGPL v3. We will use Go Ethereum Tools to create our very own blockchain, from the genesis block to mining tokens and making transactions.
@@ -56,7 +56,7 @@ Scroll down to the "Stable Releases" section and proceed depending on your opera
 2.1. Installing in OS X.
 Click on the "Geth & Tools 1.9.7" to download the applications bundle archive.
 
-(insert geth gif)
+![](Screenshots/geth-1.gif)
 
 After downloading the tools archive, open your "Downloads" folder, and you will find a file named geth-alltools-darwin-amd64-1.9.7-a718daa6.tar.gz in OS X. 
 Note: the last numbers in the filename could vary depending on the last built available.
@@ -106,8 +106,7 @@ You can now exit the terminal using Ctrl + C.
 
 For easy reference, look at the image below for a visual of steps 4. to 11. 
 
-(insert puppeth command screenshot)
-
+![](Screenshots/puppeth.png)
 
 With the genesis block creation completed, you will now initialize the nodes with the genesis' json file.
 
@@ -118,6 +117,7 @@ With the genesis block creation completed, you will now initialize the nodes wit
 
 
 #### Now the nodes can be used to begin mining blocks.
+
 2. Run the nodes in separate terminal windows with the commands:
 
 ./geth --datadir node1 --unlock "Your Node 1 Public Address Here" --mine --rpc --allow-insecure-unlock
@@ -131,13 +131,13 @@ NOTE: Add --syncmode full and/or --miner.threads if your are having trouble with
 
 1. Open the MyCrypto app on your desktop, then click Change Network at the bottom left:
 
-(insert network change image)
+![](Screenshots/change-network.png)
 
 2. Click "Add Custom Node", then add the custom network information that you set up in the genesis.
 
 - Make sure that you scroll down to choose Custom in the "Network" column to reveal more options like Chain ID. 
 
-(insert custom network image)
+![](Screenshots/custom-network.png)
 
 - Type ETH in the Currency box.
 
@@ -151,7 +151,7 @@ After connecting to the custom network in MyCrypto, it can be tested by sending 
 
 3. Select the View & Send option from the left menu pane, then click the Keystore file.
 
-(insert keystore image)
+![](Screenshots/select_keystore_file.png)
 
 4. On the next screen, click Select Wallet File, then navigate to the keystore directory inside your Node1 directory, select the file located there, and you will be prompted to enter your password and then click 'Unlock'.
 
@@ -161,11 +161,11 @@ Looks like we're filthy rich! This is the balance that was pre-funded for this a
 
 5. In the 'To Address' box, type the account address from Node2, then fill in an arbitrary amount of ETH:
 
-(insert send transaction image)
+![](Screenshots/send-transaction.gif)
 
 6. Confirm the transaction by clicking "Send Transaction", and the "Send" button in the pop-up window.
 
-(insert trx send image)
+![](Screenshots/transaction-send.png
 
 7. Click the "Check TX Status" when the green message pops up, confirm the logout.
 
@@ -173,7 +173,7 @@ You should see the transaction go from 'Pending' to 'Successful' in around the s
 
 You can click the Check TX Status button to update the status.
 
-(insert transaction status image)
+![](Screenshots/transaction-status.png)
 
 ### Congratulations! You've just created a blockchain and sent a transaction! 
 
