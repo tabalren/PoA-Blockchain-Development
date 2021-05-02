@@ -28,7 +28,7 @@ The first time you open MyCrypto, you will see a warning message. You can safely
 
 ## Allowing Permission to Open Apps from Unidentified Developers
 
-Certain applications, like MyCrypto, may be automatically blocked by the Mac OS operating system when attempting to open the "unidentified" application. Therefore, in order to allow the use of the MyCrypto app, you may need to allow it as an exception to your Mac OS security preferences. 
+Certain applications, like MyCrypto, may be automatically blocked by the Mac OS when attempting to open the "unidentified" application. Therefore, in order to allow the use of the MyCrypto app, you may need to allow it as an exception to your Mac OS security preferences. 
 
 To do so perform the following.
 
