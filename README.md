@@ -32,13 +32,13 @@ Certain applications, like MyCrypto, may be automatically blocked by the Mac OS 
 
 To do so perform the following.
 
-Open the MyCrypto app, it should produce a warning error saying that you cannot open the application due to security reasons. Therefore, we'll need to make a security exception for it.
+- Open the MyCrypto app, it should produce a warning error saying that you cannot open the application due to security reasons. Therefore, we'll need to make a security exception for it.
 
-Look to the top-left of the screen and click on the Apple Logo and navigate to System Preferences > Security & Privacy.
+- Look to the top-left of the screen and click on the Apple Logo and navigate to System Preferences > Security & Privacy.
 
 ![](Screenshots/mycrypto_system_preferences.png)
 
-Click in the General tab and allow your MyCrypto application security access to be opened in the "Allow Apps Downloaded From" section. Your screen should look similar to the image below.
+- Click in the General tab and allow your MyCrypto application security access to be opened in the "Allow Apps Downloaded From" section. Your screen should look similar to the image below.
 
 ![](Screenshots/security_privacy.png)
 
