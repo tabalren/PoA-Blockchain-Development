@@ -92,3 +92,7 @@ Decompress the archive in the location of your preference in your computer's har
 - Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
 
 - Export genesis configurations. This will fail to create two of the files, but you only need renachain3.json.
+
+(insert puppeth command screenshot)
+
+
