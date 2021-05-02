@@ -68,95 +68,112 @@ Decompress the archive in the location of your preference in your computer's har
 
 #### The following steps can be followed by Mac users. 
 
-1. Open your Terminal and navidate to a folder Blockchain-Tools. Switch from base to ethereum environment (conda activate ethereum). After, you will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses.
-
-2. Create accounts for two nodes for the network with a separate datadir for each using geth:
-
-./geth --datadir node1 account new (it will give you 'Public address of the key: 0x7D4247280Fb0090548FC66FD8d51090De4F1b0a4' and 'Path of the secret key file'. Save both in a notebook for your reference. You will need a "Public address" later.)
-./geth --datadir node2 account new (it will give you 'Public address of the key': 0x7Bb859b0acAD412c747292d027B7A4659e9191D6 and 'Path of the secret key file'. Save both in a notebook for your reference. You will need a "Public address" later.)
-
-3. Next, generate your genesis block.
+1. Open your Terminal and navidate to the folder where you downloaded your GoEthereum app. In my case, the folder was called Blockchain-Tools.
  
-- Run ./puppeth command in your Terminal, name your network (in my case, I named it "renachain3"), and select the option to configure a new genesis block.
+2. Switch from (base) to (ethereum) environment using 'conda activate ethereum' in your terminal. 
 
-- Choose the Clique (Proof of Authority) consensus algorithm.
+Now, you will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses.
 
-- Paste both account addresses from the first step one at a time into the list of accounts to seal (see above for the addresses).
+3. Create accounts for two nodes for the network with a separate datadir for each using geth:
 
-- Paste them again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
+./geth --datadir node1 account new 
 
-- You can choose no for pre-funding the pre-compiled accounts (0x1 .. 0xff) with wei. This keeps the genesis cleaner.
+This command will give you a 'Public address of the key: 0x7D4247280Fb0090548FC66FD8d51090De4F1b0a4' and 'Path of the secret key file'. Save both in a notepad for your reference under Node 1. You will need a "Public address" later.
 
-- Add a Chain ID. It can be any random number. In my case: 999.
+./geth --datadir node2 account new
 
-- Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
+Again, this will give you the 'Public address of the key': 0x7Bb859b0acAD412c747292d027B7A4659e9191D6 and 'Path of the secret key file'. Save both in a notepad for your reference under Node 2. You will need this "Public address" later.
 
-- Export genesis configurations. This will fail to create two of the files, but you only need renachain3.json.
+Next, you will generate your genesis block (first block on the blockchain).
+ 
+4. Run ./puppeth command in your Terminal and name your network (in my case, I named it "renachain3"), and select the option to configure a new genesis block.
+
+5. Choose the Clique (Proof of Authority) consensus algorithm.
+
+6. Paste both account addresses from Step 3. one at a time into the list of accounts to seal (refer to the saved addresses in your notepad).
+
+7. Paste both addresses again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
+
+8. You can choose no for pre-funding the pre-compiled accounts (0x1 .. 0xff) with wei. This keeps the genesis cleaner.
+
+9. Add a Chain ID. It can be any random number, but must be at least 3 numbers. For example: 123
+
+10. Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
+
+11. Next select Export genesis configurations. This will fail to create two of the files, but you only need the yournetworkname.json file. Check that this json file has been created in the folder where you downloaded your GoEthereum app (again, in my case this is called the 'blockchain-tools' folder).
+
+You can now exit the terminal using Ctrl + C.
+
+For easy reference, look at the image below for a visual of steps 4. to 11. 
 
 (insert puppeth command screenshot)
 
 
-3. With the genesis block creation completed, you will now initialize the nodes with the genesis' json file.
+With the genesis block creation completed, you will now initialize the nodes with the genesis' json file.
 
-- Using geth, initialize each node with the new yournetworkname.json.
+1. Using geth, initialize each node with the new yournetworkname.json using the below two commands:
+
 ./geth --datadir node1 init yournetworkname.json
 ./geth --datadir node2 init yournetworkname.json
 
+
 #### Now the nodes can be used to begin mining blocks.
-- Run the nodes in separate terminal windows with the commands:
+2. Run the nodes in separate terminal windows with the commands:
 
 ./geth --datadir node1 --unlock "Your Node 1 Public Address Here" --mine --rpc --allow-insecure-unlock
 ./geth --datadir node2 --unlock "Your Node 2 Public Address Here" --mine --port 30304 --bootnodes "enode://of your Node 1" --ipcdisable --allow-insecure-unlock
 
-NOTE**: Type your password and hit enter - even if you can't see it visually or trying adding --password pw.txt and saving an actual passwrod in txt file in the Blockchain-Tools folder.
+NOTE**: Type your password and hit enter - even if you can't see it visually.
 
 NOTE: Add --syncmode full and/or --miner.threads if your are having trouble with nodes mining.
 
 #### You're almost there! Your private PoA blockchain should now be up and running! With both nodes running, the blockchain can be added to the MyCrypto app for testing! 
 
-Open the MyCrypto app on your desktop, then click Change Network at the bottom left:
+1. Open the MyCrypto app on your desktop, then click Change Network at the bottom left:
 
 (insert network change image)
 
-Click "Add Custom Node", then add the custom network information that you set up in the genesis.
+2. Click "Add Custom Node", then add the custom network information that you set up in the genesis.
 
-Make sure that you scroll down to choose Custom in the "Network" column to reveal more options like Chain ID. 
+- Make sure that you scroll down to choose Custom in the "Network" column to reveal more options like Chain ID. 
 
 (insert custom network image)
 
-Type ETH in the Currency box.
+- Type ETH in the Currency box.
 
-In the Chain ID box, type the chain id you generated during genesis creation.
+- In the Chain ID box, type the chain id you generated during genesis creation.
 
-In the URL box type: http://127.0.0.1:8545. This points to the default RPC port on your local machine.
+- In the URL box type: http://127.0.0.1:8545. This points to the default RPC port on your local machine.
 
-Finally, click Save & Use Custom Node.
+- Finally, click Save & Use Custom Node.
 
 After connecting to the custom network in MyCrypto, it can be tested by sending money between accounts.
 
-Select the View & Send option from the left menu pane, then click Keystore file.
+3. Select the View & Send option from the left menu pane, then click the Keystore file.
 
 (insert keystore image)
 
-- On the next screen, click Select Wallet File, then navigate to the keystore directory inside your Node1 directory, select the file located there, provide your password when prompted and then click Unlock.
+4. On the next screen, click Select Wallet File, then navigate to the keystore directory inside your Node1 directory, select the file located there, and you will be prompted to enter your password and then click 'Unlock'.
 
 This will open your account wallet inside MyCrypto.
 
 Looks like we're filthy rich! This is the balance that was pre-funded for this account in the genesis configuration; however, these millions of ETH tokens are just for testing purposes.
 
-- In the To Address box, type the account address from Node2, then fill in an arbitrary amount of ETH:
+5. In the 'To Address' box, type the account address from Node2, then fill in an arbitrary amount of ETH:
 
 (insert send transaction image)
 
-Confirm the transaction by clicking "Send Transaction", and the "Send" button in the pop-up window.
+6. Confirm the transaction by clicking "Send Transaction", and the "Send" button in the pop-up window.
 
 (insert trx send image)
 
-Click the Check TX Status when the green message pops up, confirm the logout.
+7. Click the "Check TX Status" when the green message pops up, confirm the logout.
 
-You should see the transaction go from Pending to Successful in around the same blocktime you set in the genesis.
+You should see the transaction go from 'Pending' to 'Successful' in around the same blocktime you set in the genesis.
 
 You can click the Check TX Status button to update the status.
 
 (insert transaction status image)
+
+### Congratulations! You've just created a blockchain and sent a transaction! 
 
