@@ -1,6 +1,6 @@
 # How To: Create A Private Blockchain Network 
 
-(insert image)
+![](welcome.png)
 
 This step-by-step guide can be used to create a Proof of Authority (PoA) algorithm which is typically used for private blockchain networks. A PoA requires pre-approval of, or voting in of, the account addresses that can approve transactions (seal blocks).
 
@@ -11,13 +11,13 @@ This step-by-step guide can be used to create a Proof of Authority (PoA) algorit
 
 Open your browser and navigate to the downloads page at https://download.mycrypto.com/
 
-(insert image)
+![](my_crypto_download.png)
 
 Choose the appropriate installer for your operating system and once you download the installer, open the file, and follow the installation wizard.
 
 When you've successfully downloaded MyCrypto, you will a tutorial which you can read through. 
 
-(insert gif image)
+![](mycrypto2.gif)
 
 Important note for Mac users:
 
