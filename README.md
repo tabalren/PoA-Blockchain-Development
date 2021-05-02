@@ -166,7 +166,7 @@ Looks like we're filthy rich! This is the balance that was pre-funded for this a
 
 6. Confirm the transaction by clicking "Send Transaction", and the "Send" button in the pop-up window.
 
-![](Screenshots/transaction-send.png
+![](Screenshots/transaction-send.png)
 
 7. Click the "Check TX Status" when the green message pops up, confirm the logout.
 
