@@ -41,7 +41,7 @@ Click in the General tab and allow your MyCrypto application security access to 
 
 (insert security privacy image)
 
-### 2. GoEtheruem App 
+### 2. GoEthereum App 
 #### Go Ethereum is one of the three original implementations of the Ethereum protocol. It is written in Go, fully open-source and licensed under the GNU LGPL v3. We will use Go Ethereum Tools to create our very own blockchain, from the genesis block to mining tokens and making transactions.
 
 
@@ -77,18 +77,20 @@ Decompress the archive in the location of your preference in your computer's har
 
 3. Next, generate your genesis block.
 
- Markup : *  Run ./puppeth command in your Terminal, name your network (in my case, I named it "ubernet"), and select the option to configure a new genesis block.
+ Markup : *  
+ 
+- Run ./puppeth command in your Terminal, name your network (in my case, I named it "renachain3"), and select the option to configure a new genesis block.
 
 - Choose the Clique (Proof of Authority) consensus algorithm.
 
-Paste both account addresses from the first step one at a time into the list of accounts to seal (see above for the addresses).
+- Paste both account addresses from the first step one at a time into the list of accounts to seal (see above for the addresses).
 
-Paste them again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
+- Paste them again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
 
-You can choose no for pre-funding the pre-compiled accounts (0x1 .. 0xff) with wei. This keeps the genesis cleaner.
+- You can choose no for pre-funding the pre-compiled accounts (0x1 .. 0xff) with wei. This keeps the genesis cleaner.
 
-Add Chain ID. It can be any random number. In my case: 999.
+- Add a Chain ID. It can be any random number. In my case: 999.
 
-Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
+- Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
 
-Export genesis configurations. This will fail to create two of the files, but you only need ubernet.json.
+- Export genesis configurations. This will fail to create two of the files, but you only need renachain3.json.
