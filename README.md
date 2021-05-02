@@ -69,7 +69,7 @@ Note: the last numbers in the filename could vary depending on the last built av
 
 #### The following steps can be followed by Mac users. 
 
-1. Open your Terminal and navidate to the folder where you downloaded your GoEthereum app. In my case, the folder was called Blockchain-Tools.
+1. Open your Terminal and navigate to the folder where you downloaded your GoEthereum app. In my case, the folder was called Blockchain-Tools.
  
 2. Switch from (base) to (ethereum) environment using 'conda activate ethereum' in your terminal. 
 
