@@ -10,11 +10,11 @@
 ### 1. MyCrypto App
 #### An open-source web-based wallet application, MyCrypto lets you manage the plethora of Ethereum-based tokens and make transactions in the blockchain, all while keeping your private keys offline.
 
-Open your browser and navigate to the downloads page at https://download.mycrypto.com/
+- Open your browser and navigate to the downloads page at https://download.mycrypto.com/
 
 ![](Screenshots/my_crypto_download.png)
 
-Choose the appropriate installer for your operating system and once you download the installer, open the file, and follow the installation wizard.
+- Choose the appropriate installer for your operating system and once you download the installer, open the file, and follow the installation wizard.
 
 When you've successfully downloaded MyCrypto, you will see an easy tutorial which you can read through. 
 
@@ -49,9 +49,9 @@ Click in the General tab and allow your MyCrypto application security access to 
 To install the Go Ethereum Tools, follow the steps below:
 
 
-Open your browser and navigate to the Go Ethereum Tools download page at https://geth.ethereum.org/downloads/
+- Open your browser and navigate to the Go Ethereum Tools download page at https://geth.ethereum.org/downloads/
 
-Scroll down to the "Stable Releases" section and proceed depending on your operating system.
+- Scroll down to the "Stable Releases" section and proceed depending on your operating system.
 
 
 2.1. Installing in OS X.
@@ -59,10 +59,10 @@ Click on the "Geth & Tools 1.9.7" to download the applications bundle archive.
 
 ![](Screenshots/geth-1.gif)
 
-After downloading the tools archive, open your "Downloads" folder, and you will find a file named geth-alltools-darwin-amd64-1.9.7-a718daa6.tar.gz in OS X. 
+- After downloading the tools archive, open your "Downloads" folder, and you will find a file named geth-alltools-darwin-amd64-1.9.7-a718daa6.tar.gz in OS X. 
 Note: the last numbers in the filename could vary depending on the last built available.
 
-Decompress the archive in the location of your preference in your computer's hard drive, and rename the containing folder as Blockchain-Tools or any other name you prefer. I recommend using a location that can be easily accessed from the terminal window like the user's home directory.
+- Decompress the archive in the location of your preference in your computer's hard drive, and rename the containing folder as Blockchain-Tools or any other name you prefer. I recommend using a location that can be easily accessed from the terminal window like the user's home directory.
 
 
 ## Now it's time to start building your own blockchain!
