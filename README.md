@@ -76,8 +76,6 @@ Decompress the archive in the location of your preference in your computer's har
 ./geth --datadir node2 account new (it will give you 'Public address of the key': 0x7Bb859b0acAD412c747292d027B7A4659e9191D6 and 'Path of the secret key file'. Save both in a notebook for your reference. You will need a "Public address" later.)
 
 3. Next, generate your genesis block.
-
- Markup : *  
  
 - Run ./puppeth command in your Terminal, name your network (in my case, I named it "renachain3"), and select the option to configure a new genesis block.
 
