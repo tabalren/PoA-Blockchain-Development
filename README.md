@@ -79,11 +79,11 @@ Now, you will generate two new nodes with new account addresses that will serve 
 
 ./geth --datadir node1 account new 
 
-This command will give you a 'Public address of the key: 0x7D4247280Fb0090548FC66FD8d51090De4F1b0a4' and 'Path of the secret key file'. Save both in a notepad for your reference under Node 1. You will need a "Public address" later.
+This command will give you a 'Public address of the key' and 'Path of the secret key file'. Save both in a notepad for your reference under Node 1. You will need a Public address later.
 
 ./geth --datadir node2 account new
 
-Again, this will give you the 'Public address of the key': 0x7Bb859b0acAD412c747292d027B7A4659e9191D6 and 'Path of the secret key file'. Save both in a notepad for your reference under Node 2. You will need this "Public address" later.
+Again, this will give you the 'Public address of the key' and 'Path of the secret key file'. Save both in a notepad for your reference under Node 2. You will need this Public address later.
 
 Next, you will generate your genesis block (first block on the blockchain).
  
