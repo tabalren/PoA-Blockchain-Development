@@ -140,7 +140,7 @@ With the genesis block creation completed, you will now initialize the nodes wit
 
 ![](Screenshots/node1mine.png)
 
-You will then by prompted to type in your password and hit enter - even if you can't see it while typing it in, it will be entered. 
+You will then be prompted to type in your password and hit enter - even if you can't see it while typing it in, it will be entered. 
 
 ![](Screenshots/node1pw.png)
 
