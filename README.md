@@ -108,7 +108,7 @@ For reference, refer to the below image of the code to be entered into Terminal 
 
 ![](/Screenshots/puppeth2.png)
 
-10. Add a Chain ID. It can be any random number, but must be at least 3 numbers. For example: 123
+10. Add a Chain ID. It can be any random number, but must be at least 3 numbers. In my example: 908
 
 11. Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
 
