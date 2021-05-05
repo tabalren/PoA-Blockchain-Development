@@ -84,7 +84,7 @@ This command will give you a 'Public address of the key' and 'Path of the secret
 
 Again, this will give you the 'Public address of the key' and 'Path of the secret key file'. Save both in a notepad for your reference under Node 2. You will need this Public address later.
 
-For easy reference, look at the image below for a visual of the code to be entered in Terminal.
+For easy reference, look at the image below for a visual of the code to be entered in Terminal. (Of course you should never share your secret key with anyone! But this is a test case so you will see mine here.) 
 
 ![](/Screenshots/step1.png)
 
