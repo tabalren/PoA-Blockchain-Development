@@ -90,7 +90,7 @@ For easy reference, look at the image below for a visual of the code to be enter
 
 Next, you will generate your genesis block (first block on the blockchain).
  
-3. Run ./puppeth command in your Terminal and name your network (in my case, I named it "renachain3"), and select the option to configure a new genesis block.
+3. Run ./puppeth command in your Terminal and name your network (in my case, I named it "renatab"), and select the option to configure a new genesis block.
 
 4. Choose the Clique (Proof of Authority) consensus algorithm.
 
