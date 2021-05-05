@@ -112,11 +112,11 @@ For reference, refer to the below image of the code to be entered into Terminal 
 
 11. Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
 
-10. Next select Export genesis configurations. This will fail to create two of the files, but you only need the yournetworkname.json file. Check that this json file has been created in the folder where you downloaded your GoEthereum app (again, in my case this is called the 'blockchain-tools' folder).
+12. Next select Export genesis configurations. This will fail to create two of the files, but you only need the yournetworkname.json file. Check that this json file has been created in the folder where you downloaded your GoEthereum app (again, in my case this is called the 'blockchain-tools' folder).
 
 You can now exit the terminal using Ctrl + C.
 
-For easy reference, look at the image below for a visual of steps 10. to 11. 
+For easy reference, see screenshot below of steps 10 to 12. 
 
 ![](Screenshots/chainid1.png)
 
@@ -127,15 +127,30 @@ With the genesis block creation completed, you will now initialize the nodes wit
 ./geth --datadir node1 init yournetworkname.json
 ./geth --datadir node2 init yournetworkname.json
 
+![](Screenshots/node1.png)
 
 #### Now the nodes can be used to begin mining blocks.
 
-2. Run each nodes in two separate terminal windows with the commands:
+2. Run each node in two separate terminal windows with the commands:
 
 ./geth --datadir node1 --unlock "Your Node 1 Public Address Here" --mine --rpc --allow-insecure-unlock
+
+![](Screenshots/node1mine.png)
+
+You will then by prompted to type in your password and hit enter - even if you can't see it while typing it in, it will be entered. 
+
+![](Screenshots/node1pw.png)
+
+Now do the same in a new terminal for your second note, using the enode address from Node 1. See image below where you will find your enode in Node 1. 
+
+![](Screenshots/node1enode.png)
+
+
 ./geth --datadir node2 --unlock "Your Node 2 Public Address Here" --mine --port 30304 --bootnodes "enode://of your Node 1" --ipcdisable --allow-insecure-unlock
 
-NOTE**: Type your password and hit enter - even if you can't see it visually.
+![](Screenshots/node2init.png)
+
+Again, you will be prompted to type in your password and hit enter.
 
 NOTE: Add --syncmode full and/or --miner.threads if your are having trouble with nodes mining.
 
