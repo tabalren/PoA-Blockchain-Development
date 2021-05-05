@@ -92,17 +92,25 @@ Next, you will generate your genesis block (first block on the blockchain).
  
 3. Run ./puppeth command in your Terminal and name your network (in my case, I named it "renatab"), and select the option to configure a new genesis block.
 
-4. Choose the Clique (Proof of Authority) consensus algorithm.
+4. Select Configure new genesis
 
-5. Paste both account addresses from Step 3. one at a time into the list of accounts to seal (refer to the saved addresses in your notepad).
+5. Select Create new genesis from scratch 
 
-6. Paste both addresses again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
+6. Choose the Clique (Proof of Authority) consensus algorithm.
 
-7. You can choose no for pre-funding the pre-compiled accounts (0x1 .. 0xff) with wei. This keeps the genesis cleaner.
+7. Paste both account addresses from Step 2. one at a time into the list of accounts to seal (refer to the saved addresses in your notepad).
 
-8. Add a Chain ID. It can be any random number, but must be at least 3 numbers. For example: 123
+8. Paste both addresses again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
 
-9. Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
+9. You can choose no for pre-funding the pre-compiled accounts (0x1 .. 0xff) with wei. This keeps the genesis cleaner.
+
+For reference, refer to the below image of the code to be entered into Terminal for Steps 3 to 9. 
+
+![](/Screenshots/puppeth2.png)
+
+10. Add a Chain ID. It can be any random number, but must be at least 3 numbers. For example: 123
+
+11. Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
 
 10. Next select Export genesis configurations. This will fail to create two of the files, but you only need the yournetworkname.json file. Check that this json file has been created in the folder where you downloaded your GoEthereum app (again, in my case this is called the 'blockchain-tools' folder).
 
@@ -110,7 +118,7 @@ You can now exit the terminal using Ctrl + C.
 
 For easy reference, look at the image below for a visual of steps 4. to 11. 
 
-![](Screenshots/puppeth1.png)
+![](Screenshots/puppeth2.png)
 
 With the genesis block creation completed, you will now initialize the nodes with the genesis' json file.
 
