@@ -207,6 +207,6 @@ You can click the Check TX Status button to update the status.
 
 ![](Screenshots/transaction-status.png)
 
-### Congratulations! You've just created a blockchain and sent a transaction! 
+# Congratulations! You've just created a blockchain and sent a transaction! 
 
 
