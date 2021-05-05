@@ -116,9 +116,9 @@ For reference, refer to the below image of the code to be entered into Terminal 
 
 You can now exit the terminal using Ctrl + C.
 
-For easy reference, look at the image below for a visual of steps 4. to 11. 
+For easy reference, look at the image below for a visual of steps 10. to 11. 
 
-![](Screenshots/puppeth2.png)
+![](Screenshots/chainid.png)
 
 With the genesis block creation completed, you will now initialize the nodes with the genesis' json file.
 
