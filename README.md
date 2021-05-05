@@ -70,12 +70,11 @@ Note: the last numbers in the filename could vary depending on the last built av
 #### The following steps can be followed by Mac users. 
 
 1. Open your Terminal and navigate to the folder where you downloaded your GoEthereum app. In my case, the folder was called Blockchain-Tools.
- 
-2. Switch from (base) to (ethereum) environment using 'conda activate ethereum' in your terminal. 
+
 
 Now, you will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses.
 
-3. Create accounts for two nodes for the network with a separate datadir for each using geth:
+2. Create accounts for two nodes for the network with a separate datadir for each using geth:
 
 ./geth --datadir node1 account new 
 
@@ -87,21 +86,21 @@ Again, this will give you the 'Public address of the key' and 'Path of the secre
 
 Next, you will generate your genesis block (first block on the blockchain).
  
-4. Run ./puppeth command in your Terminal and name your network (in my case, I named it "renachain3"), and select the option to configure a new genesis block.
+3. Run ./puppeth command in your Terminal and name your network (in my case, I named it "renachain3"), and select the option to configure a new genesis block.
 
-5. Choose the Clique (Proof of Authority) consensus algorithm.
+4. Choose the Clique (Proof of Authority) consensus algorithm.
 
-6. Paste both account addresses from Step 3. one at a time into the list of accounts to seal (refer to the saved addresses in your notepad).
+5. Paste both account addresses from Step 3. one at a time into the list of accounts to seal (refer to the saved addresses in your notepad).
 
-7. Paste both addresses again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
+6. Paste both addresses again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
 
-8. You can choose no for pre-funding the pre-compiled accounts (0x1 .. 0xff) with wei. This keeps the genesis cleaner.
+7. You can choose no for pre-funding the pre-compiled accounts (0x1 .. 0xff) with wei. This keeps the genesis cleaner.
 
-9. Add a Chain ID. It can be any random number, but must be at least 3 numbers. For example: 123
+8. Add a Chain ID. It can be any random number, but must be at least 3 numbers. For example: 123
 
-10. Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
+9. Complete the rest of the prompts, and when you are back at the main menu, choose the "Manage existing genesis" option.
 
-11. Next select Export genesis configurations. This will fail to create two of the files, but you only need the yournetworkname.json file. Check that this json file has been created in the folder where you downloaded your GoEthereum app (again, in my case this is called the 'blockchain-tools' folder).
+10. Next select Export genesis configurations. This will fail to create two of the files, but you only need the yournetworkname.json file. Check that this json file has been created in the folder where you downloaded your GoEthereum app (again, in my case this is called the 'blockchain-tools' folder).
 
 You can now exit the terminal using Ctrl + C.
 
@@ -119,7 +118,7 @@ With the genesis block creation completed, you will now initialize the nodes wit
 
 #### Now the nodes can be used to begin mining blocks.
 
-2. Run the nodes in TWO separate terminal windows with the commands:
+2. Run each nodes in two separate terminal windows with the commands:
 
 ./geth --datadir node1 --unlock "Your Node 1 Public Address Here" --mine --rpc --allow-insecure-unlock
 ./geth --datadir node2 --unlock "Your Node 2 Public Address Here" --mine --port 30304 --bootnodes "enode://of your Node 1" --ipcdisable --allow-insecure-unlock
