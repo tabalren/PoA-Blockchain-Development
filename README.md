@@ -84,6 +84,10 @@ This command will give you a 'Public address of the key' and 'Path of the secret
 
 Again, this will give you the 'Public address of the key' and 'Path of the secret key file'. Save both in a notepad for your reference under Node 2. You will need this Public address later.
 
+For easy reference, look at the image below for a visual of the code to be entered in Terminal.
+
+![](/Screenshots/step1.png)
+
 Next, you will generate your genesis block (first block on the blockchain).
  
 3. Run ./puppeth command in your Terminal and name your network (in my case, I named it "renachain3"), and select the option to configure a new genesis block.
