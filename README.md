@@ -125,7 +125,10 @@ With the genesis block creation completed, you will now initialize the nodes wit
 1. Using geth, initialize each node with the new yournetworkname.json using the below two commands:
 
 ./geth --datadir node1 init yournetworkname.json
+
+
 ./geth --datadir node2 init yournetworkname.json
+
 
 ![](Screenshots/node1.png)
 
