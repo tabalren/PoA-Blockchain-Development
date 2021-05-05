@@ -62,14 +62,14 @@ Click on the "Geth & Tools 1.9.7" to download the applications bundle archive.
 - After downloading the tools archive, open your "Downloads" folder, and you will find a file named geth-alltools-darwin-amd64-1.9.7-a718daa6.tar.gz in OS X. 
 Note: the last numbers in the filename could vary depending on the last built available.
 
-- Decompress the archive in the location of your preference in your computer's hard drive, and rename the containing folder as Blockchain-Tools or any other name you prefer. I recommend using a location that can be easily accessed from the terminal window like the user's home directory.
+- Decompress the archive in the location of your preference in your computer's hard drive, and rename the containing folder as Blockchain-Dev or any other name you prefer. I recommend using a location that can be easily accessed from the terminal window like the user's home directory.
 
 
 ## Now it's time to start building your own blockchain!
 
 #### The following steps can be followed by Mac users. 
 
-1. Open your Terminal and navigate to the folder where you downloaded your GoEthereum app. In my case, the folder was called Blockchain-Tools.
+1. Open your Terminal and navigate to the folder where you downloaded your GoEthereum app. In my case, the folder was called Blockchain-Dev.
 
 
 Now, you will generate two new nodes with new account addresses that will serve as our pre-approved sealer addresses.
