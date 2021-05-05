@@ -119,7 +119,7 @@ With the genesis block creation completed, you will now initialize the nodes wit
 
 #### Now the nodes can be used to begin mining blocks.
 
-2. Run the nodes in separate terminal windows with the commands:
+2. Run the nodes in TWO separate terminal windows with the commands:
 
 ./geth --datadir node1 --unlock "Your Node 1 Public Address Here" --mine --rpc --allow-insecure-unlock
 ./geth --datadir node2 --unlock "Your Node 2 Public Address Here" --mine --port 30304 --bootnodes "enode://of your Node 1" --ipcdisable --allow-insecure-unlock
