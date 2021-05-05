@@ -167,8 +167,6 @@ NOTE: Add --syncmode full and/or --miner.threads if your are having trouble with
 
 - Make sure that you scroll down to choose Custom in the "Network" column to reveal more options like Chain ID. 
 
-![](Screenshots/renatab.png)
-
 - Type ETH in the Currency box.
 
 - In the Chain ID box, type the chain id you generated during genesis creation.
@@ -176,6 +174,8 @@ NOTE: Add --syncmode full and/or --miner.threads if your are having trouble with
 - In the URL box type: http://127.0.0.1:8545. This points to the default RPC port on your local machine.
 
 - Finally, click Save & Use Custom Node.
+
+![](Screenshots/renatab.png)
 
 **Note: Because I have already created this node, the two yellow warning messages will not apply to you.
 
